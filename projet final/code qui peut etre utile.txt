@@ -1,0 +1,5 @@
+#test d'une api pour la conjugaison, mais elle est payante, je n'ai donc pas les droits
+import urllib.request
+with urllib.request.urlopen('https://api.ultralingua.com/api/conjugations/fra/mettre') as response:
+   html = response.read()
+   
