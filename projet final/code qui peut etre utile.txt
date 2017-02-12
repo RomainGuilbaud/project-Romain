@@ -3,3 +3,21 @@ import urllib.request
 with urllib.request.urlopen('https://api.ultralingua.com/api/conjugations/fra/mettre') as response:
    html = response.read()
    
+
+   
+#nettoyage de donnée des pronom + test
+from nltk.corpus import stopwords
+from nltk.tokenize import WordPunctTokenizer
+
+tokenizer = WordPunctTokenizer()
+tokens = tokenizer.tokenize("je suis énervées par tous ces papiers, il me mets dans tous ses états")
+tokenst = tokenizer.tokenize("dans tous ses états")
+
+
+french_stopwords = set(stopwords.words('french'))
+tokens = [token for token in tokens if token.lower() not in french_stopwords]
+tokenst = [token for token in tokenst if token.lower() not in french_stopwords]
+str1 = ' '.join(tokens)
+str2 = ' '.join(tokenst)
+
+print(str1.find(str2))

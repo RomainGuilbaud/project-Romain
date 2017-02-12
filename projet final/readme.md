@@ -13,3 +13,7 @@ Coupure avec ses émotions=10
 
 
 API pour conjuguaison : http://api.ultralingua.com/
+
+nécessite nltk: 
+import nltk
+nltk.download()
