@@ -1,0 +1,5 @@
+https://de.dariah.eu/tatom/classification_logistic_regression.html
+http://www.nltk.org/book/ch06.html
+http://blog.fouadhamdi.com/introduction-a-nltk/
+http://polyglot.readthedocs.io/en/latest/Sentiment.html
+http://textminingonline.com/dive-into-nltk-part-i-getting-started-with-nltk
